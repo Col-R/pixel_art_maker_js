@@ -7,9 +7,9 @@ var color = document.getElementById ('colorPicker');
 
 
 // create grid function based on user input for the grid dimensions
-gridSize.addEventListener ('submit', function(event) {
+gridSize.addEventListener ('submit', function(e) {
     pixelCanvas.innerHTML = '';
-    event.preventDefault();
+    e.preventDefault();
     makeGrid (gridHeight.value, gridWidth.value);
 });
 
